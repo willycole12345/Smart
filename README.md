@@ -1,13 +1,21 @@
 Here’s a more detailed guide to help you set up your Autobot application:
 Setting Up Your Autobot Application
+
 Follow these steps to set up and run the Autobot application on your local server:
+
 Step 1: Download and Save the Folder to Your Local Server
 Download the application files.
 Extract the contents to your local server directory (e.g., htdocs for XAMPP, www for WAMP, or your designated web root folder for other environments).
+
+
 Step 2: Create a MySQL Database and Run Migrations
+
 Create a MySQL Database:
+
 Open your MySQL management tool (like phpMyAdmin).
+
 Create a new database (e.g., autobot_db).
+
 Run Laravel Migrations:
 Open a terminal or command prompt in the root directory of your Laravel application.
 Run the following command to migrate the necessary tables to your database:
@@ -15,19 +23,29 @@ Run the following command to migrate the necessary tables to your database:
 
 php artisan migrate 
 This command will execute the migrations and create the necessary tables in your database.
+
 Step 3: Configure Your Environment File
+
 Open the .env File:
+
 Find the .env file in the root directory of your Laravel project.
+
 Open it in a text editor.
+
 Set Up Your Pusher Configuration:
 Locate the following lines in your .env file:
 PUSHER_APP_ID=
+
 PUSHER_APP_KEY=
+
 PUSHER_APP_SECRET=
+
 PUSHER_APP_CLUSTER=
 
- Fill in your Pusher details (you can get these from your Pusher dashboard).
+Fill in your Pusher details (you can get these from your Pusher dashboard).
+
 Configure Other Necessary Settings:
+
 Ensure your database connection settings are correct:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
